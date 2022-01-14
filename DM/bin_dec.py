@@ -1,7 +1,7 @@
 # Programes par Eliot CASSIDY
 
 def binary_to_decimal(binval: str) -> int:
-    """ Renvoie la valeur décimal d'un binaire ou -1 si valeur incorect"""
+    """Renvoie la valeur décimal d'un binaire ou -1 si valeur incorect"""
     if not(isinstance(binval, str)):
         return -1
     for letter in range(len(binval)):
@@ -17,7 +17,7 @@ def binary_to_decimal(binval: str) -> int:
 
 
 def decimal_to_binary(decval: int) -> str:
-    """ Renvoie la valeur binaire d'un décimal ou -1 si valeur incorect"""
+    """Renvoie la valeur binaire d'un décimal ou -1 si valeur incorect"""
     if not(isinstance(decval, int)) or decval < 0:
         return "-1"
     if decval == 0:
