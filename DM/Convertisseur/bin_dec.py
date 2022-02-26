@@ -5,7 +5,7 @@ def binary_to_decimal(binval: str) -> int:
     if not(isinstance(binval, str)):
         return -1
     for letter in range(len(binval)):
-        if binval[letter] not in ["0", "1"]:
+        if binval[letter] != "0" and binval[letter] != "1":
             return -1
 
     decval, k = 0, 0
